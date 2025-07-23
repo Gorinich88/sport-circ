@@ -798,7 +798,7 @@ footer p {
   }
 
   .movie-list-title {
-    color: #fff;
+    color: #311cec;
      font-size: clamp(20px, 3vw, 35px);/*для адаптивности шрифта */
   }
   
