@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Про студію</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Напрямки</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Gorinich88" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+
+
+    </header>
+
+   
+
+    <main>
+        <h2>Наша історія</h2>
+        <p>Студія існує з 2025 року. Студія невеличка і має 20 учнів, які суплінно прокачуються та стають кращими.</p>
+        <h3>Галерея</h3> 
+
+
+        <div class="content1">
+            <img src="./pictures/Juggling Photos - Download Free High-Quality Pictures _ Freepik.jpg" alt="Marvel Studios" />
+            <img src="https://i.postimg.cc/tCxn7kXb/2.png" alt="Marvel Studios" />
+            <img src="https://i.postimg.cc/rsvdQ0N7/3.jpg" alt="Marvel Studios" />
+            <img src="https://i.postimg.cc/Gmn8DD2y/4.png" alt="Marvel Studios" />
+            <img src="https://i.postimg.cc/59GFxTWp/5.jpg" alt="Marvel Studios" />
+          </div>
+          
+          
+          <!-- Lightbox, який показується поверх усього -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img id="lightbox-img" class="lightbox-content">
+    <div id="lightbox-caption" class="caption"></div>
+  
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+  </div>
+          
+
+
+    </main>
+
+    <!-- Video player -->
+<!-- 
+    <div class="movie-list-container">
+        <h1 class="movie-list-title">NEW RELEASES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="./pictures/The Greatest Show.jpg" alt="">
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                        <div class="video-ball-wrapper">
+                           
+                            <button class="movie-list-item-button" onclick="openVideo()">Watch</button>
+                        </div>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="./pictures/Juggling Photos - Download Free High-Quality Pictures _ Freepik.jpg" alt="">
+                    <span class="movie-list-item-title">Star Wars</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/3.jpg" alt="">
+                    <span class="movie-list-item-title">Storm</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/4.jpg" alt="">
+                    <span class="movie-list-item-title">1917</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                    <span class="movie-list-item-title">Star Wars</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                    <span class="movie-list-item-title">Her</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                    <span class="movie-list-item-title">Star Wars</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                    <button class="movie-list-item-button">Watch</button>
+                </div>
+
+                <i class="fas fa-chevron-right arrow"></i> -->
+
+
+                <!-- <div class="gallery-container">
+                    <button class="arrow left" onclick="scrollGallery(-1)">←</button> -->
+
+
+                    <div class="movie-list-container">
+                        <h1 class="movie-list-title">Відео "UPGRADE"</h1>
+                        <div class="movie-list-wrapper">
+                            <div class="movie-list">
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/The Greatest Show.jpg" alt="">
+                                    <!-- <span class="movie-list-item-title">Her</span>
+                                    <p class="movie-list-item-desc">З цього все починалось!</p> -->
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                        <!-- <div class="video-ball-wrapper">
+                                           
+                                        </div> -->
+                                </div>
+                              
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/duo-dusolei.jpg" alt="">
+                                    <!-- <span class="movie-list-item-title">Повітряна гімнастика</span>
+                                    <p class="movie-list-item-desc">Неймовірний жанр повітряної гімнастики на полотнах.</p> -->
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                </div>
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/duo-dusolei.jpg" alt="">
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                </div>
+
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/duo-dusolei.jpg" alt="">
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                </div>
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/duo-dusolei.jpg" alt="">
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                </div>
+                                <div class="movie-list-item">
+                                    <img class="movie-list-item-img" src="./pictures/duo-dusolei.jpg" alt="">
+                                    <button class="movie-list-item-button" onclick="openVideo('sWOo8IgKHMA')">Дивитись</button>
+                                </div>
+                                
+                            </div>    
+                            <i class="fas fa-chevron-right arrow"></i>
+                        </div>    
+
+                        
+
+ 
+                    
+
+
+                    </div>    
+
+                    <!-- <div class="video-gallery">
+                      <div class="videos" id="videoTrack">
+                        <div class="video-item">
+                          <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 1" onclick="openVideo('sWOo8IgKHMA')" />
+                        </div>
+                        <div class="video-item">
+                            <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 2" onclick="openVideo('sWOo8IgKHMA')" />
+                          </div>
+                          <div class="video-item">
+                            <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 3" onclick="openVideo('sWOo8IgKHMA')" />
+                          </div>
+                          <div class="video-item">
+                            <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 4" onclick="openVideo('sWOo8IgKHMA')" />
+                          </div>
+                          <div class="video-item">
+                            <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 5" onclick="openVideo('sWOo8IgKHMA')" />
+                          </div>
+                          <div class="video-item">
+                            <img src="https://img.youtube.com/vi/sWOo8IgKHMA/0.jpg" alt="Video 6" onclick="openVideo('sWOo8IgKHMA')" />
+                          </div>
+                        <!- Додай більше відео при потребі -->
+                      <!-- </div>
+                    </div> --> 
+                
+                    <!-- <button class="arrow right" onclick="scrollGallery(1)">→</button> -->
+                  </div>
+                
+          
+                
+                  <!-- Модальне вікно -->
+                  <div class="video-overlay" id="videoOverlay">
+                    <div class="video-content">
+                      <span class="close-btn" onclick="closeVideo()">✖</span>
+                      <iframe id="youtubeFrame" width="800" height="450" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                
+                  
+                
+                
+                
+                
+                
+                
+                <footer>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+                          <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://t.me/Gorinich88" target="_blank">
+                          <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+                          <i class="fab fa-facebook-f"></i>
+                        </a>
+                      </div>
+                    <p>© 2025 Циркова студія "UPGRADE"</p>
+                </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>

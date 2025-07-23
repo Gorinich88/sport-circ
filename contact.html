@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Напрямки</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Gorinich88" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+
+
+    </header>
+
+    <main>
+        <h2>Зв'яжіться з нами</h2>
+        <!-- <form id="contactForm">
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="email" placeholder="Ваш Email" required>
+            <textarea class="your-massege" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Відправити</button>
+        </form> -->
+
+        <!-- 🔹 HTML: форма -->
+        <section class="contact-form">
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="2c578ae1-a7fa-4390-acf4-d3e2d53a1ab5">
+              
+              <input type="text" name="name" placeholder="Ваше ім'я" required>
+              <input type="email" name="email" placeholder="Ваш email" required>
+              <textarea name="message" rows="5" placeholder="Ваше повідомлення" required></textarea>
+              
+              <input type="hidden" name="_captcha" value="false">
+              <button type="submit">Відправити</button>
+              <div id="successMessage" class="hidden">✅ Повідомлення надіслано!</div>
+            </form>
+          
+        </section>
+  
+  
+
+
+        <h3>Де ми знаходимось:</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10451.402877452432!2d33.4340775!3d49.089477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d753001484d731%3A0xeb5e6450090a9877!2sManezh%20Sk%20%22Politekhnik%22!5e0!3m2!1sru!2sua!4v1752184257069!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Gorinich88" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        <p>© 2025 Циркова студія "UPGRADE"</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

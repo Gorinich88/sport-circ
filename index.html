@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Циркова студія "UPGRADE"</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Циркова студія "UPGRADE"</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Напрямки</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Gorinich88" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+
+    </header>
+
+
+    <main>
+      <h2>Ласкаво просимо!</h2>
+      <p>Навчайся мистецтву цирку з нами – стань артистом мрії!</p>
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide active">
+            <img src="./pictures/samuraj_voin_zdaniia_210219_1920x1080.jpg" alt="Слайд 1">
+            <div class="caption">🎪 Циркове мистецтво для дітей</div>
+          </div>
+          <div class="slide">
+            <img src="./pictures/sergio.jpg" alt="Слайд 2">
+            <div class="caption">🤸 Навчання акробатиці</div>
+          </div>
+          <div class="slide">
+            <img src="./pictures/duo-dusolei.jpg" alt="Слайд 3">
+            <div class="caption">🎭 Шоу та виступи</div>
+          </div>
+        </div>
+      
+        <div class="slider-buttons">
+          <button id="prev">&#10094;</button>
+          <button id="next">&#10095;</button>
+        </div>
+      </div>
+
+
+
+      <div class="video-ball-wrapper">
+        <button class="video-button" onclick="openVideo()">Дивитись відео</button>
+        <div class="ball"></div>
+      </div>
+      
+
+
+
+      <!-- <button class="video-button" onclick="openVideo()">Дивитись відео</button>
+
+  <--<Всплывающее окно> -->
+  <div class="overlay" id="videoOverlay">
+    <div class="video-popup">
+      <div class="close-btn" onclick="closeVideo()">×</div>
+      <iframe id="youtubeFrame" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+
+<!-- 
+      <div class="ball"></div> -->
+    </main>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/egorshnurenko/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://t.me/Gorinich88" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://www.facebook.com/egor.snurenko" target="_blank">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </div>
+        <p>© 2025 Циркова студія "UPGRADE"</p>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
