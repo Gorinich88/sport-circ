@@ -1,0 +1,104 @@
+<head>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-E3YM6S1S7Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-E3YM6S1S7Z', {
+          'debug_mode': true,
+          'allow_google_signals': true,
+          'send_page_view': true
+          });
+      </script>
+
+</head>
+<body>
+    
+
+<h1 class="name title-card-product" itemprop="name">Кеди жіночі Welfare 484-003-50</h1>
+<a id="button-cart" class="btn-project bg-black">До кошика</a>
+
+<div class="block_price-product">
+    <span class="new-price one-price" id="product-price">3 888 грн</span><span style="display:none;" class="cashsback">[Кешбек 194.4 грн]</span>
+</div>
+
+<div id="option13858" class="size wrapper-info-size error">
+		                            		                            	
+    <span class="name-option">Оберіть розмір:</span>
+
+
+    <div class="tabl_size wrapper_scroll scrollbar">
+        <div class="list-size">
+                
+        <input id="s85435" data-shop="1" name="option[13858]" type="radio" value="85435" hidden="hiden"><label for="s85435">36</label>
+                
+        <input id="s85436" data-shop="1" name="option[13858]" type="radio" value="85436" hidden="hiden"><label for="s85436">37</label>
+                
+        <input id="s85437" data-shop="1" name="option[13858]" type="radio" value="85437" hidden="hiden"><label for="s85437">38</label>
+                
+        <input id="s85438" data-shop="1" name="option[13858]" type="radio" value="85438" hidden="hiden"><label for="s85438">39</label>
+                
+        <input id="s85439" data-shop="1" name="option[13858]" type="radio" value="85439" hidden="hiden"><label for="s85439">40</label>
+                
+        <input id="s85440" data-shop="1" name="option[13858]" type="radio" value="85440" hidden="hiden"><label for="s85440">41</label>
+                                                    
+        </div>
+    </div>
+    
+</div>
+
+<script>
+
+
+
+
+  document.getElementById('button-cart').addEventListener('click', function(event) {
+let productName = document.querySelector('.title-card-product').textContent;//Кеди жіночі
+let productPrice = document.querySelector('.new-price').textContent;
+// let productPrice = document.querySelector('#product-price').textContent;для ИД
+let selectedSize = document.querySelector('.list-size input[type="radio"]:checked');
+
+// Получаем текст внутри связанного label
+let labelText = document.querySelector(`label[for="${selectedSize.id}"]`).textContent;
+console.log({
+
+'nameofProduct':productName,
+'nameofPrice':productPrice,
+'selectedSize':labelText,
+
+});
+    gtag('event', 'to busket', {
+
+  'nameofProduct':productName,
+  'nameofPrice':productPrice,
+  'selectedSize':labelText,
+
+  })});
+</script>
+</body>
+
+
+<script>
+ document.getElementById('main-image').addEventListener('click', function(event) {
+        let productName = document.querySelector('.product-info').textContent;//порошок Аріель
+let productPrice = document.querySelector('.price').textContent;
+// let productPrice = document.querySelector('#product-price').textContent;для ИД
+// let selectedSize = document.querySelector('.list-size input[type="radio"]:checked');
+
+// Получаем текст внутри связанного label
+// let labelText = document.querySelector(`label[for="${selectedSize.id}"]`).textContent;
+console.log({
+
+'nameofProduct':productName,
+'nameofPrice':productPrice,
+// 'selectedSize':labelText,
+
+});
+    gtag('event', 'to busket', {
+
+  'nameofProduct':productName,
+  'nameofPrice':productPrice,
+//   'selectedSize':labelText,
+
+  })});
+</script>
