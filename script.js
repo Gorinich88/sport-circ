@@ -4,6 +4,18 @@
 
 
 
+// Кнопка звуку на відео індекса
+const video = document.getElementById('myVideo');
+const muteBtn = document.getElementById('muteBtn');
+
+muteBtn.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteBtn.textContent = video.muted ? '🔇' : '🔊';
+});
+
+
+
+
 
 
 

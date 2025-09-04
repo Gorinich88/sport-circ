@@ -54,6 +54,12 @@ h1 {
 
 h2 {
     color: #fff;
+    text-shadow: 0 0 10px #ffff,
+    0 0 20px #ffff,
+    0 0 30px #ffff,
+    0 0 40px #ffff,
+    0 0 50px #ffff;
+    -webkit-text-stroke: 1px #000;
 }
 h3 {
     color: #fff;
@@ -115,11 +121,12 @@ header .logo:hover {
     left: 20%;
     right: 20%;
     bottom: 20%; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    margin-top: 100px;
 
     background-color: rgba(255, 255, 255, 0.225);
 
-    pointer-events: none;
+    
 }
 video {
     max-width: 100%;
@@ -134,11 +141,29 @@ video {
     padding-top: 2.5%; */
 }
 
+.mute-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+}
+.mute-btn:hover {
+    background: rgba(0,0,0,0.8);
+}
+
 
 
 
  main {
-    padding: 20px;
+    
+    padding: 140px;
     text-align: center;
 }
 main p {
@@ -158,6 +183,12 @@ main li {
   position: relative;
   line-height: 1.5;  /* увеличиваем межстрочный интервал */
   transition: color 0.3s ease;
+  text-shadow: 0 0 5px #ffff,
+    0 0 10px #ffff,
+    0 0 15px #ffff,
+    0 0 20px #ffff,
+    0 0 25px #ffff;
+    -webkit-text-stroke: 0.5px #000;
 }
 
 button {
@@ -882,7 +913,7 @@ footer p {
   }
 
   .movie-list-title {
-    color: #311cec;
+    color: #ffff;
      font-size: clamp(20px, 3vw, 35px);/*для адаптивности шрифта */
   }
   
@@ -1072,11 +1103,12 @@ footer p {
         left: 20%;
         right: 20%;
         bottom: 20%; */
-        margin: 243px auto;
+        /* margin: 243px auto; */
+        margin-top: 300px;
     
         background-color: rgba(255, 255, 255, 0.225);
     
-        pointer-events: none;
+        /* pointer-events: none; */
     }
     video {
         max-width: 100%;
@@ -1089,6 +1121,9 @@ footer p {
         display: block;
         /* position: center;
         padding-top: 2.5%; */
+    }
+    main {
+        padding-top: 250px;
     }
 }
   
