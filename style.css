@@ -113,9 +113,11 @@ header .logo:hover {
 
   /* Видео промо в боди */
   .header_content {
-    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    /* max-width: 100%;
     height: auto;
-    position: relative;
+    position: relative; */
     z-index: 1;
     /* top: 20%;
     left: 20%;
@@ -129,14 +131,30 @@ header .logo:hover {
     
 }
 video {
-    max-width: 100%;
-    position: relative;
+  width: 800px;        /* ТУТ ЗАДАЄТЬСЯ РОЗМІР: змініть 800px на більше чи менше за потребою */
+    max-width: 90%;      /* Захист для мобільних телефонів: відео не буде ширшим за екран */
     height: auto;
+    position: relative;
+    display: block;
+    border-radius: 15px; /* Додає гарні заокруглені кути */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Додає тінь для об'єму (опціонально) */
+  /* width: 800px;
+    max-width: 90%;
+    position: relative;
+    height: auto; */
 }
 .video_media {
-    width: 100%;
+  width: 800px;        /* ТУТ ЗАДАЄТЬСЯ РОЗМІР: змініть 800px на більше чи менше за потребою */
+    max-width: 90%;      /* Захист для мобільних телефонів: відео не буде ширшим за екран */
     height: auto;
+    position: relative;
     display: block;
+    border-radius: 15px; /* Додає гарні заокруглені кути */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5); /* Додає тінь для об'єму (опціонально) */
+  /* width: 800px;
+    width: 90%;
+    height: auto;
+    display: block; */
     /* position: center;
     padding-top: 2.5%; */
 }
