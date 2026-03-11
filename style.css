@@ -1113,30 +1113,47 @@ footer p {
         text-align: center;
     }
     .header_content {
-        max-width: 100%;
+      display: flex;             /* Вмикаємо гнучкий контейнер для мобілок */
+        justify-content: center;   /* Центруємо по горизонталі */
+        align-items: center;
+        width: 100%;
+        margin-top: 300px;         /* Ваш відступ від шапки */
+        background-color: rgba(255, 255, 255, 0.225);
+        padding: 20px 0;           /* Трохи простору зверху і знизу */
+        /* max-width: 100%;
         height: auto;
         position: relative;
-        z-index: 1;
+        z-index: 1; */
         /* top: 20%;
         left: 20%;
         right: 20%;
         bottom: 20%; */
         /* margin: 243px auto; */
-        margin-top: 300px;
+        /* margin-top: 300px;
     
-        background-color: rgba(255, 255, 255, 0.225);
+        background-color: rgba(255, 255, 255, 0.225); */
     
         /* pointer-events: none; */
     }
     video {
-        max-width: 100%;
+      width: 90%;                /* На вузьких екранах відео займатиме 90% ширини */
+        max-width: 800px;
+        margin: 0 auto;            /* Залізне правило центрування для блоків */
+        display: block;
+        border-radius: 15px;       /* Зберігаємо красиві кути */
+        /* max-width: 100%;
         position: relative;
-        height: auto;
+        height: auto; */
     }
     .video_media {
-        width: 100%;
-        height: auto;
+      width: 90%;                /* На вузьких екранах відео займатиме 90% ширини */
+        max-width: 800px;
+        margin: 0 auto;            /* Залізне правило центрування для блоків */
         display: block;
+        border-radius: 15px;       /* Зберігаємо красиві кути */
+        /* width: 100%;
+        height: auto;
+        display: block; */
         /* position: center;
         padding-top: 2.5%; */
     }
