@@ -963,7 +963,34 @@ footer p {
   }
   
   @media only screen and (max-width: 940px){
-      .menu-container{
+    header {
+      display: flex;
+      justify-content: space-between; /* Розносить лого та бургер по краях */
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1000;
+  }
+  
+  /* Стиль для самого бургера */
+  .hamburger {
+      order: -1; /* Це магічна властивість, яка переставить бургер ВЛІВО від логотипу */
+      cursor: pointer;
+      padding: 10px;
+      z-index: 1100;
+  }
+  
+  .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000; /* Або білий, залежно від вашого фону */
+  }
+    
+    
+    
+    
+    .menu-container{
           display: none;
       }
   }
@@ -1082,34 +1109,70 @@ footer p {
 
   /* Адаптація для авігації */
   @media (max-width: 1100px) {
-    header {
-        font-size: 8px;
-        flex-direction: column; /* Всё в колонку */
-        padding: 10px;
-        align-items: center;
-        justify-content: center; /* Центрируем элементы */
-    }
+      header {
+      display: flex;
+      justify-content: space-between; /* Розносить лого та бургер по краях */
+      align-items: center;
+      padding: 10px 20px;
+      position: relative;
+      z-index: 1000;
+  }
+}
+
+  
+  /* Стиль для самого бургера */
+  .hamburger {
+    display: none; /* Ховаємо бургер */
+}
+  
+  .logo {
+      font-size: 24px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #000; /* Або білий, залежно від вашого фону */
+  }
+
 
     header .logo {
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         text-align: center;
         font-size: 18px;
     }
 
+
     .nav_list {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 10px;
-        padding-left: 0px;
-    }
+      display: flex;
+      list-style: none;
+      gap: 20px; /* Це додасть відстань між словами */
+      margin: 0;
+      padding: 0;
+  }
+
+
+  .nav_list1 {
+    display: none;
+}
+  
+  .nav_link {
+      text-decoration: none;
+      color: #000; /* Чорний для світлої шапки */
+      font-weight: bold;
+  }
+
+
+
+
+
+
+
+
 
     .nav_item {
-        margin: 10px 0;
+        margin: 18px 0;
     }
 
     .social-icons {
-        margin-top: 10px;
+        margin-top: 5px;
         text-align: center;
     }
     .header_content {
@@ -1160,7 +1223,85 @@ footer p {
     main {
         padding-top: 250px;
     }
-}
+
   
 
 
+/* Ховаємо бургер на комп'ютерах */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: rgb(14, 13, 13); /* Або чорний, залежно від фону */
+  cursor: pointer;
+}
+
+/* Налаштування для мобільних пристроїв (екран < 768px) */
+@media (max-width: 768px) {
+  .hamburger {
+    position: relative;
+    z-index: 1100; /* Щоб бургер був вище за всі інші елементи */
+    cursor: pointer;
+    display: block; /* На мобільних */
+}
+
+
+
+
+.hamburger {
+  display: block; /* Показуємо бургер */
+}
+
+
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Тепер меню виїжджатиме ЗЛІВА */
+  width: 250px; /* Фіксована ширина, щоб не займало весь екран */
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95); /* Темний фон під космос */
+  transition: 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* Відступ, щоб не перекрити бургер */
+}
+
+.nav.active {
+  left: 0; /* Виїжджає на екран */
+}
+
+/* Приховуємо горизонтальне меню, яке не влізло */
+.nav_list1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 30px;
+}
+
+
+  .nav_item {
+      margin: 15px 0;
+  }
+
+  /* Коли меню активне, список має бути видимим і білим */
+.nav.active .nav_list {
+  display: flex !important;
+  flex-direction: column; /* Пункти один під одним */
+  padding-top: 80px;      /* Відступ зверху, щоб не перекривалося логотипом */
+  list-style: none;
+}
+
+.nav.active .nav_link {
+  color: #ffffff !important; /* Білий колір тексту */
+  font-size: 24px;          /* Збільшимо розмір для зручності на телефоні */
+  text-decoration: none;
+  display: block;
+  padding: 15px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+  .header-socials {
+      display: none; /* Можна приховати іконки в шапці на мобільних для чистоти */
+  }
+}

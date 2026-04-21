@@ -2,7 +2,19 @@
 //     alert('🎪 Ласкаво просимо у світ циркових чудес!');
 // });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
 
+  if (hamburger && nav) {
+      hamburger.addEventListener('click', () => {
+          nav.classList.toggle('active');
+          console.log("Клас active додано/видалено!"); 
+      });
+  } else {
+      console.log("Помилка: Не знайдено ID 'hamburger' або 'nav' у вашому HTML!");
+  }
+});
 
 // Кнопка звуку на відео індекса
 const video = document.getElementById('myVideo');
