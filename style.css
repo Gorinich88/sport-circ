@@ -132,25 +132,7 @@ header .logo:hover {
 }
 
 
-/* Виправлення кліків по кнопках відео */
-.nav {
-  pointer-events: none; /* Забороняємо перехоплення кліків, коли меню закрите */
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.4s ease;
-}
 
-.nav.active {
-  pointer-events: auto; /* Дозволяємо кліки, коли меню відкрите */
-  opacity: 1;
-  visibility: visible;
-  left: 0;
-}
-
-/* Стилізація іконок всередині бургера */
-.mobile-socials {
-  display: none; /* Ховаємо на комп'ютері */
-}
 
 
 
@@ -1328,4 +1310,19 @@ footer p {
   .header-socials {
       display: none; /* Можна приховати іконки в шапці на мобільних для чистоти */
   }
+}
+
+.movie-list {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Відстань між відео */
+  transition: all 0.5s ease;
+  /* Додайте ці два рядки нижче: */
+  overflow-x: hidden; 
+  scroll-behavior: smooth;
+}
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden; /* Щоб зайві відео не вилазили за межі екрана */
 }

@@ -6,7 +6,8 @@ const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 const images = document.querySelectorAll(".content1 img");
 
-let currentIndex = 0;
+// let currentIndex = 0; 
+let galleryIndex = 0;
 
 // Відкриття
 images.forEach((img, index) => {
@@ -127,6 +128,45 @@ function closeVideo() {
   const iframe = document.getElementById("youtubeFrame");
   overlay.style.display = "none";
   iframe.src = "";
+}
+
+
+
+
+
+
+const arrow = document.querySelector(".arrow");
+const movieList = document.querySelector(".movie-list");
+
+if (arrow && movieList) {
+    arrow.addEventListener("click", () => {
+        // Визначаємо ширину однієї картки відео з відступами
+        const itemWidth = document.querySelector(".movie-list-item").offsetWidth + 30;
+        
+        // Зміщуємо список вліво
+        movieList.scrollBy({
+            left: itemWidth,
+            behavior: "smooth" // Плавна анімація
+        });
+
+        // Якщо дійшли до кінця — повертаємося на початок
+        if (movieList.scrollLeft + movieList.clientWidth >= movieList.scrollWidth) {
+            movieList.scrollTo({
+                left: 0,
+                behavior: "smooth"
+            });
+        }
+    });
+}
+
+
+
+const myButton = document.getElementById('next-arrow'); // або ваш ID
+
+if (myButton) { // Тільки якщо кнопка існує на цій сторінці
+    myButton.addEventListener('click', () => {
+        // ваш код
+    });
 }
 
 
