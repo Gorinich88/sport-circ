@@ -63,23 +63,42 @@ setInterval(() => {
 
 
 
-function openVideo() {
-    const overlay = document.getElementById("videoOverlay");
-    const iframe = document.getElementById("youtubeFrame");
+// function openVideo() {
+//     const overlay = document.getElementById("videoOverlay");
+//     const iframe = document.getElementById("youtubeFrame");
 
-    // Подставьте ссылку на своё видео
-    iframe.src = "https://www.youtube.com/embed/sWOo8IgKHMA?si=-VXfwXfC9lopSx6c";
-    overlay.style.display = "flex";
+//     // Подставьте ссылку на своё видео
+//     iframe.src = "https://www.youtube.com/embed/sWOo8IgKHMA?si=-VXfwXfC9lopSx6c";
+//     overlay.style.display = "flex";
+//   }
+
+//   function closeVideo() {
+//     const overlay = document.getElementById("videoOverlay");
+//     const iframe = document.getElementById("youtubeFrame");
+
+//     overlay.style.display = "none";
+//     iframe.src = ""; // Очищаем, чтобы остановить видео
+//   }
+function openVideo(videoId) {
+  const overlay = document.getElementById("videoOverlay");
+  const iframe = document.getElementById("youtubeFrame");
+
+  if (overlay && iframe) {
+      // Формуємо посилання динамічно, використовуючи videoId з кнопки
+      iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+      
+      overlay.style.display = "flex";
+  } else {
+      console.error("Елементи videoOverlay або youtubeFrame не знайдені на сторінці!");
   }
+}
+function closeVideo() {
+  const overlay = document.getElementById("videoOverlay");
+  const iframe = document.getElementById("youtubeFrame");
 
-  function closeVideo() {
-    const overlay = document.getElementById("videoOverlay");
-    const iframe = document.getElementById("youtubeFrame");
-
-    overlay.style.display = "none";
-    iframe.src = ""; // Очищаем, чтобы остановить видео
-  }
-
+  if (overlay) overlay.style.display = "none";
+  if (iframe) iframe.src = ""; // Очищуємо джерело, щоб зупинити плеєр
+}
 
 
 
